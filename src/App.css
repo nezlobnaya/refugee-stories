@@ -4,13 +4,6 @@
 
 .App-logo {
   height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -25,14 +18,118 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #09d3ac;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form {
+  display: block;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  /* max-width: 50%;  */
+  margin: 0 auto; 
+  /* border: 2px solid red;  */
+  /* border-radius: 4px;  */
+  padding: 10px 10px 15px;
 }
+
+
+button {
+  border: 1px dotted rgb(97, 93, 93);
+    border-radius: 10px;
+    font-family : inherit;
+    font-size   : 100%;
+    padding      : 5px 10px 5px 5px;
+    font         : bold 0.9em sans-serif;
+    border       : 2px solid #333;
+    border-radius: 5px;
+    background   : none;
+    cursor       : pointer;
+    -webkit-appearance: none;
+   -webkit-transform: rotate(-1.5deg);
+    -moz-transform: rotate(-1.5deg);
+    -ms-transform: rotate(-1.5deg);
+    -o-transform: rotate(-1.5deg);
+    transform: rotate(-1.5deg);
+  }
+/* 
+  button:after {
+    content: " >>>";
+  } */
+  
+  button:hover,
+  button:focus {
+    outline   : none;
+    background: #000;
+    color   : #FFF;
+  }
+  
+  input {
+    border: 5px solid rgb(100, 88, 88); 
+    -webkit-box-shadow: 
+      inset 0 0 10px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 10px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 10px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 15px;
+    background: rgba(246, 235, 235, 0.5);
+    margin: 0 0 10px 0;
+}
+
+  label {
+    padding: 10px 10px;
+    display: block;
+    
+  }
+
+  
+  .story{
+    background-color:rgba(169, 226, 236, 0.931);
+    border: 0;
+    box-shadow: 0 -1px 0 #e0e0e0, 0 0 5px rgba(0, 0, 0, 0.12),
+      0 5px 8px rgba(0, 0, 0, 0.24);
+    padding: 1rem;
+    cursor: pointer;
+    position: relative;
+    margin: 1rem auto;
+  }
+
+.list {
+      display: flex;
+      flex-flow: wrap;
+      transition: 0.5s;
+    }
+
+.list :hover {
+  transform: translateY(-4px) scale(1.01);  
+}
+    
+    nav {
+      background: rgba(169, 226, 236, 0.931);
+      top: 0;
+      width: 100%;
+      transition: all 0.2s;
+      position: relative;
+      z-index: 1;
+    }
+ 
+    nav a {
+      text-decoration: none;
+      padding: 20px;
+      display: inline-block;
+      transition: all 0.2s;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+  
+    nav a:hover {
+      color: #fcbb58;
+      cursor: pointer;
+    }
+
+
+    
